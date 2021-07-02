@@ -1,4 +1,5 @@
-# Install GOlang:
+
+> # Install GO lang:
 
 ## 1. Download the Go installer.
 
@@ -6,14 +7,14 @@
 wget https://golang.org/dl/go1.16.5.linux-amd64.tar.gz
 ```
 
-## 2. Extract the archive you downloaded into /usr/local, creating a Go tree in /usr/local/go: 
+## 2. Extract the archive you downloaded into `/usr/local`, creating a Go tree in `/usr/local/go`: 
 
 
 ```
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.16.5.linux-amd64.tar.gz
 ```
 
-## 3. Add /usr/local/go/bin to the PATH environment variable
+## 3. Add `/usr/local/go/bin` to the PATH environment variable:
 
 ```
 export PATH=$PATH:/usr/local/go/bin
@@ -25,7 +26,7 @@ export PATH=$PATH:/usr/local/go/bin
 go version
 ```
 
-# Greetings GO module Greetings:
+> # Greetings GO module Greetings:
 
 ## 1. Create directory:
 
@@ -34,13 +35,13 @@ mkdir greetings
 cd greetings
 ```
 
-## Start your module:
+## 2. Start your module:
 
 ```
 go mod init example.com/greetings
 ```
 
-## Write code in file greetings.go:
+## 3. Write code in file `greetings.go`:
 
 ```
 package greetings
@@ -56,11 +57,9 @@ func Hello(name string) string {
 ```
 
 
+> # Create GO module `Hello`:
 
-
-# Create GO module Hello:
-
-## 1. Create directory hello
+## 1. Create directory `hello`
 
 ```
 <home>/
@@ -78,7 +77,7 @@ cd hello
 
 `go mod init example.com/hello`
 
-## 3. Write code in file hello.go:
+## 3. Write code in file `hello.go`:
 
 ```
 package main
@@ -96,7 +95,7 @@ func main() {
 }
 ```
 
-## 4. The command specifies that example.com/greetings should be replaced with ../greetings for the purpose of locating the dependency.
+## 4. The command specifies that `example.com/greetings` should be replaced with `../greetings` for the purpose of locating the dependency.
 
 ```
 go mod edit -replace example.com/greetings=../greetings
