@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/pborman/uuid"
-	"github.com/vaskoevgen/go-lessons/modules/firstmodule"
+	"github.com/vaskoevgen/go-lessons/firstmodule"
 )
 
 func main() {
