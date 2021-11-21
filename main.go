@@ -6,7 +6,7 @@ import (
 
 	"github.com/pborman/uuid"
 	"github.com/vaskoevgen/go-lessons/firstmodule"
-	"github.com/vaskoevgen/go-modules"
+	"github.com/vaskoevgen/go-modules/secondmodule"
 )
 
 func main() {
