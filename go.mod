@@ -1,3 +1,3 @@
-module github.com/vaskoengen/go-lessons
+module github.com/vaskoevgen/go-lessons
 
 go 1.17
