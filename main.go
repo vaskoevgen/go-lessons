@@ -6,10 +6,12 @@ import (
 
 	"github.com/pborman/uuid"
 	"github.com/vaskoevgen/go-lessons/firstmodule"
+	"github.com/vaskoevgen/go-modules"
 )
 
 func main() {
 	firstmodule.Outputtext("test")
+	secondmodule.Outputtext1("text2")
 	uuid_app()
 }
 
