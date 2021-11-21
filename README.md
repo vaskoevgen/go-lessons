@@ -1,6 +1,8 @@
 
 https://golangify.com/
 
+https://github.com/fsufitch/sample-go-app-v2
+
 ## Install GO lang:
 
 ## 1. Download the Go installer.
@@ -13,7 +15,7 @@ wget https://golang.org/dl/go1.17.3.linux-amd64.tar.gz
 
 
 ```
-sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.16.5.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.17.3.linux-amd64.tar.gz
 ```
 
 ## 3. Add `/usr/local/go/bin` to the PATH environment variable:
@@ -33,73 +35,31 @@ go version
 ## 1. Create directory:
 
 ```
-mkdir greetings
-cd greetings
+mkdir helloworld
+cd helloworld
 ```
 
 ## 2. Start your module:
 
 ```
-go mod init example.com/greetings
+go mod init github.com/vaskoevgen/go-lessons
 ```
 
-## 3. Write code in file `greetings.go`:
+## 3. Write code in file `helloworld/helloworld.go`:
 
 ```
-package greetings
-
-import "fmt"
-
-// Hello returns a greeting for the named person.
-func Hello(name string) string {
-    // Return a greeting that embeds the name in a message.
-    message := fmt.Sprintf("Hi, %v. Welcome!", name)
-    return message
-}
-```
-
-
-> # Create GO module `Hello`:
-
-## 1. Create directory `hello`
-
-```
-<home>/
- |-- greetings/
- |-- hello/
-```
-
-```
-cd ..
-mkdir hello
-cd hello
-```
-
-## 2. Start your module:
-
-`go mod init example.com/hello`
-
-## 3. Write code in file `hello.go`:
-
-```
-package main
+package helloworld
 
 import (
-    "fmt"
-
-    "example.com/greetings"
+	"fmt"
 )
 
-func main() {
-    // Get a greeting message and print it.
-    message := greetings.Hello("Gladys")
-    fmt.Println(message)
+func Hello() {
+    fmt.Println("Hello, World!")
 }
 ```
 
-## 4. The command specifies that `example.com/greetings` should be replaced with `../greetings` for the purpose of locating the dependency.
-
+Init go mod:
 ```
-go mod edit -replace example.com/greetings=../greetings
-go mod tidy
+go mod init github.com/vaskoengen/go-lessons/
 ```
