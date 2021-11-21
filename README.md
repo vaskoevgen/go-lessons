@@ -1,10 +1,12 @@
 
-> # Install GO lang:
+https://golangify.com/
+
+## Install GO lang:
 
 ## 1. Download the Go installer.
 
 ```
-wget https://golang.org/dl/go1.16.5.linux-amd64.tar.gz
+wget https://golang.org/dl/go1.17.3.linux-amd64.tar.gz
 ```
 
 ## 2. Extract the archive you downloaded into `/usr/local`, creating a Go tree in `/usr/local/go`: 
