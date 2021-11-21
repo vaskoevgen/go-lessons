@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	firstmodule.outputtext("test")
+	firstmodule.Outputtext("test")
 	uuid_app()
 }
 

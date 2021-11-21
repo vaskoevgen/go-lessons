@@ -4,6 +4,6 @@ import (
 	"fmt"
 )
 
-func outputtext(x string) {
+func Outputtext(x string) {
     fmt.Println(x)
 }
