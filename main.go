@@ -1,7 +1,12 @@
-package main
+/*
+    Первая программа 
+    на языке Go
+*/
+
+package main // определение пакета для текущего файла
 
 import (
-	"fmt"
+	"fmt" // подключение пакета fmt
 	"strings"
 
 	"github.com/pborman/uuid"

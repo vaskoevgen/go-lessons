@@ -1,4 +1,8 @@
 
+https://www.tutorialspoint.com/go/index.htm
+
+https://metanit.com/go/tutorial/1.1.php
+
 https://golangify.com/
 
 https://github.com/fsufitch/sample-go-app-v2
@@ -35,8 +39,8 @@ go version
 ## 1. Create directory:
 
 ```
-mkdir helloworld
-cd helloworld
+mkdir firstmodule
+cd first module
 ```
 
 ## 2. Start your module:
@@ -57,9 +61,4 @@ import (
 func Hello() {
     fmt.Println("Hello, World!")
 }
-```
-
-Init go mod:
-```
-go mod init github.com/vaskoengen/go-lessons/
 ```
