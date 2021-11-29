@@ -1,4 +1,6 @@
 
+https://gobyexample.com/
+
 https://www.tutorialspoint.com/go/index.htm
 
 https://metanit.com/go/tutorial/1.1.php
